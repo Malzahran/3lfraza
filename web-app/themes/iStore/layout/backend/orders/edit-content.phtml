@@ -1,0 +1,61 @@
+<div class="modal-body">
+    <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="edit-form"
+          id="editorder">
+        <input type="hidden" name="item_id" value="iC{{ORDER_ID}}">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @req_order_cost_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" value="iC{{ORDER_COST}}" class="form-control" name="order_price" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @req_order_delv_cost_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" value="iC{{ORDER_DELIVERY}}" class="form-control" name="order_delivery"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @req_delv_arrival_date@</label>
+                    <input type="text" value="iC{{ORDER_DATE}}" class="form-control" name="date">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @req_delv_arrival_time@</label>
+                    <input type="text" value="iC{{ORDER_TIME}}" class="form-control" name="time">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="edit-order-desc" class="control-label">
+                        @req_order_detailes_label@ <span class="symbol required"></span></label>
+                    <textarea id="edit-order-desc" class="form-control" name="order_content" cols="3" rows="3" required>iC{{ORDER_DESC}}</textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">@cancel_btn@</button>
+    <button id="edit-btn" type="button" onclick="updateitem();" class="btn btn-success">
+        @edit_btn@
+    </button>
+</div>

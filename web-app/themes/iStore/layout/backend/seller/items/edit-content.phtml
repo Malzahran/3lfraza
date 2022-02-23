@@ -1,0 +1,174 @@
+<form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="edit-form" id="editItem">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5 class="over-title margin-bottom-15"><span class="text-bold">@seller_items_label@</span>
+                    <span class="checkbox clip-check check-success checkbox-inline">
+                        <input type="checkbox" id="active_state" name="active_state" value="1" iC{{ITEM_ACTIVE}}>
+                        <label for="active_state">@active_label@</label></span>
+                </h5>
+                <div class="tabbable">
+                    <ul id="myTab2" class="nav nav-tabs nav-justified">
+                        <li class="active">
+                            <a href="#editItem_tab_genral" data-toggle="tab" aria-expanded="false">
+                                <i class="fa fa-navicon"></i> @main_info_add@
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#editItem_tab_ar" data-toggle="tab" aria-expanded="false">
+                                <i class="fa fa-globe"></i> @data_in_lang@@ar_lang@
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#editItem_tab_en" data-toggle="tab" aria-expanded="true">
+                                <i class="fa fa-globe"></i> @data_in_lang@@en_lang@
+                            </a>
+                        </li>
+                    </ul>
+                    <input type="hidden" name="item_id" value="iC{{ITEM_ID}}"/>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="editItem_tab_genral">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox clip-check check-primary checkbox-inline">
+                                        <input type="checkbox" id="edit_cart" name="cart" value="1" iC{{ITEM_CART}}>
+                                        <label for="edit_cart">@allow_orders_label@</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="checkbox clip-check check-primary checkbox-inline">
+                                        <input type="checkbox" id="edit_stock" name="stock" value="1" iC{{ITEM_STOCK}}>
+                                        <label for="edit_stock">@stock_management@</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="checkbox clip-check check-primary checkbox-inline">
+                                        <input type="checkbox" id="edit_soon" name="soon" value="1" iC{{ITEM_SOON}}>
+                                        <label for="edit_soon">@coming_soon_label@</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @item_code_label@ <span class="symbol required"></span>
+                                        </label>
+                                        <input type="number" placeholder="@input_ph@@item_code_label@"
+                                               class="form-control" value="iC{{ITEM_CODE}}" name="code" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @sort_label@ @seller_cat_type_1@
+                                        </label>
+                                        <input type="number" placeholder="@cat_order_ph@"
+                                               value="iC{{ITEM_ORDER}}" class="form-control" name="order">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @price_label@ <span class="symbol iC{{PR_REQUIRED}}"></span>
+                                        </label>
+                                        <input type="number" placeholder="@input_ph@@price_label@"
+                                               class="form-control" value="iC{{ITEM_PRICE}}" name="price" iC{{PR_REQUIRED}}>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @price_dsc_label@
+                                        </label>
+                                        <input type="number" placeholder="@input_ph@@price_dsc_label@"
+                                               class="form-control" value="iC{{ITEM_DSC_PRICE}}" name="dscprice">
+                                    </div>
+                                </div>
+                                iC{{MORE_EDIT_MODAL}}
+                                iC{{ITEM_MAIN_IMG}}
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @main_photo_label@
+                                        </label>
+                                        <input name="fimage" type="file" class="form-control">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="editItem_tab_ar">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @title_in_lang@@ar_lang@ <span class="symbol required"></span>
+                                        </label>
+                                        <input type="text" placeholder="@input_ph@@title_in_lang@@ar_lang@"
+                                               class="form-control" value="iC{{ITEM_TITLE_AR}}" name="title[ar]"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @des_in_lang@@ar_lang@ <span class="symbol required"></span>
+                                        </label>
+                                        <textarea class="ckeditor form-control" id="editor2" name="desc[ar]" cols="5"
+                                                  rows="5" required>iC{{ITEM_DESC_AR}}</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @notes_in_lang@@ar_lang@
+                                        </label>
+                                        <textarea class="ckeditor form-control" id="editor2" name="notes[ar]" cols="5"
+                                                  rows="5">iC{{ITEM_NOTES_AR}}</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="editItem_tab_en">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @title_in_lang@@en_lang@ <span class="symbol required"></span>
+                                        </label>
+                                        <input type="text" placeholder="@input_ph@@title_in_lang@@en_lang@"
+                                               class="form-control" value="iC{{ITEM_TITLE_EN}}" name="title[en]"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @des_in_lang@@en_lang@ <span class="symbol required"></span>
+                                        </label>
+                                        <textarea class="form-control" id="editor2" name="desc[en]" cols="5" rows="5"
+                                                  required>iC{{ITEM_DESC_EN}}</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @notes_in_lang@@en_lang@
+                                        </label>
+                                        <textarea class="form-control" id="editor2" name="notes[en]" cols="5" rows="5">iC{{ITEM_NOTES_EN}}</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">@cancel_btn@</button>
+        <button id="edit-btn" type="button" onclick="updateitem();" class="btn btn-success">
+            @edit_btn@
+        </button>
+    </div>
+</form>

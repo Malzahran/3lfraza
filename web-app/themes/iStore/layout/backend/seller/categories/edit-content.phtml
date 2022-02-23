@@ -1,0 +1,84 @@
+<div class="modal-body">
+    <h5 class="over-title margin-bottom-15"><span class="text-bold">@seller_cats_label@</span></h5>
+    <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="edit-form" id="editcat">
+        <input type="hidden" name="item_id" value="iC{{CAT_ID}}"/>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" for="cat_order_e">
+                        @cat_order_label@
+                    </label>
+                    <input type="number" value="iC{{CAT_ORDER}}" class="form-control" id="cat_order_e" name="order">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            iC{{MORE_EDIT_MODAL}}
+        </div>
+        <div id="mainsele" class="row iC{{CAT_MAIN_HIDDEN}}">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="catedit">
+                        @select_main_cat@
+                    </label> <span class="symbol required"></span>
+                    <select id="catedit" name="cat" class="form-control" required>
+                        iC{{CAT_P_SELECT}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="subsele" class="row iC{{CAT_SUB_HIDDEN}}">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="subcatedit">
+                        @select_sub_cat@
+                    </label> <span class="symbol required"></span>
+                    <select id="subcatedit" name="subcat" class="form-control" required>
+                        iC{{CAT_M_SELECT}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" for="title_ar_e">
+                        @title_in_lang@@ar_lang@ <span class="symbol required"></span>
+                    </label>
+                    <input type="text" value="iC{{CAT_TITLE_AR}}" class="form-control" id="title_ar_e" name="title[ar]"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" for="title_en_e">
+                        @title_in_lang@@en_lang@ <span class="symbol required"></span>
+                    </label>
+                    <input type="text" value="iC{{CAT_TITLE_EN}}" class="form-control" id="title_en_e" name="title[en]"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @main_photo_label@
+                    </label>
+                    <img width="100%" src="iC{{CAT_IMG}}" class="img-rounded"/>
+                    <input name="image" type="file" class="form-control">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+        @cancel_btn@
+    </button>
+    <button id="edit-btn" type="button" onclick="updateitem();" class="btn btn-success">
+        @edit_btn@
+    </button>
+</div>

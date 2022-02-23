@@ -1,0 +1,80 @@
+<div class="modal-body">
+    <h5 class="over-title margin-bottom-15"><span class="text-bold">@cities_label@</span></h5>
+    <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="edit-form" id="edititm">
+        <input type="hidden" name="item_id" value="iC{{CITY_ID}}"/>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="groupedit">
+                        @select_group_label@
+                    </label> <span class="symbol required"></span>
+                    <select id="groupedit" name="city_group" class="form-control" required>
+                        iC{{GROUP_SELECT}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" for="title_ar_e">
+                        @title_in_lang@@ar_lang@ <span class="symbol required"></span>
+                    </label>
+                    <input type="text" value="iC{{CITY_TITLE_AR}}" class="form-control" id="title_ar_e" name="title[ar]"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" for="title_en_e">
+                        @title_in_lang@@en_lang@ <span class="symbol required"></span>
+                    </label>
+                    <input type="text" value="iC{{CITY_TITLE_EN}}" class="form-control" id="title_en_e" name="title[en]"
+                           required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">
+                        @lat_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" placeholder="@input_ph@@lat_label@" class="form-control"
+                           name="lat" value="iC{{CITY_LAT}}" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        @lon_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" placeholder="@input_ph@@lon_label@" class="form-control"
+                           name="lon" value="iC{{CITY_LON}}" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        @radius_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" placeholder="@input_ph@@radius_label@" class="form-control"
+                           name="radius" value="iC{{CITY_RADIUS}}" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        @shipping_cost_label@ <span class="symbol required"></span>
+                    </label>
+                    <input type="number" placeholder="@input_ph@@shipping_cost_label@" class="form-control"
+                           name="shipping" value="iC{{CITY_SHIPPING}}" required>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+        @cancel_btn@
+    </button>
+    <button id="edit-btn" type="button" onclick="updateitem();" class="btn btn-success">
+        @edit_btn@
+    </button>
+</div>

@@ -1,0 +1,59 @@
+<!-- Modal -->
+<div class="modal fade slide-up" id="addnew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-sm">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@add_new_btn@</h4>
+            </div>
+            <div class="modal-body">
+                <h5 class="over-title margin-bottom-15"><span class="text-bold">@promo_codes_label@</span></h5>
+                <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="add-form"
+                      id="addItem">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @promo_code_label@ <span class="symbol required"></span>
+                                </label>
+                                <input type="text" placeholder="@input_ph@@promo_code_label@" class="form-control"
+                                       id="promo" name="promo" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="typesel">
+                                    @sel_type_label@
+                                </label> <span class="symbol required"></span>
+                                <select id="typesel" name="p_type" class="form-control" required>
+                                    <option value="1">@percentage_label@</option>
+                                    <option value="2">@amount_label@</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @value_label@ <span class="symbol required"></span>
+                                </label>
+                                <input type="number" placeholder="@input_ph@@value_label@" class="form-control"
+                                       id="p_value" name="p_value" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+                    @cancel_btn@
+                </button>
+                <button id="addnewbtn" type="button" class="btn btn-success">
+                    @add_new_btn@
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

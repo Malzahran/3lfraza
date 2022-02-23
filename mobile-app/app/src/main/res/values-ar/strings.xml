@@ -1,0 +1,318 @@
+<resources>
+  <string name="app_name">عالفرازة</string>
+  <string name="app_still_running">مازال التطبيق يعمل</string>
+  <string name="app_still_running_desc">أضغط للفتح مرة أخري</string>
+  <string name="about_app">عن التطبيق</string>
+  <string name="about_html">
+        <![CDATA[
+        <h5>© <b>%1$s</b></h5>
+        إصدار التطبيق : <b>%2$s</b>.
+        ]]>
+    </string>
+
+  <string name="lang_change_long">English</string>
+  <string name="lang_change">EN</string>
+  <string name="menu_news">الأخبار</string>
+  <string name="menu_orders">طلباتي</string>
+  <string name="menu_contact">تواصل معنا</string>
+  <string name="menu_users_head">المستخدمين</string>
+  <string name="menu_profile">حسابي الشخصي</string>
+  <string name="menu_share">شارك التطبيق</string>
+  <string name="menu_logout">تسجيل الخروج</string>
+
+  <string name="change_pass">تعديل كلمة المرور</string>
+  <string name="oldpass">كلمة المرور الحالية</string>
+  <string name="newpass">كلمة المرور الجديدة</string>
+
+  <string name="navigation_drawer_open">فتح القائمة</string>
+  <string name="navigation_drawer_close">إغلاق القائمة</string>
+
+  <string name="credit_label">رصيدي : </string>
+  <string name="user_name">أسم المستخدم</string>
+  <string name="password">كلمة المرور</string>
+  <string name="email">البريد الإلكتروني</string>
+  <string name="name">الأسم</string>
+  <string name="login">تسجيل الدخول</string>
+  <string name="login_facebook">دخول بحسابك علي فيس بوك</string>
+  <string name="login_google">دخول بحسابك علي جوجل</string>
+  <string name="register">تسجيل مستخدم جديد</string>
+  <string name="register_sh">تسجيل</string>
+  <string name="loginhead">دخول المستخدمين</string>
+  <string name="registerhead">تسجيل مستخدم جديد</string>
+
+  <string name="loading">جاري التحميل</string>
+
+  <string name="home">الرئيسية</string>
+  <string name="search">البحث</string>
+
+  <string name="fieldsempty">الحقول فارغة !</string>
+  <string name="internetcheck">تحقق من أتصالك بالأنترنت</string>
+  <string name="copyrights">© 3lFraza</string>
+
+  <string name="permission_not_granted">عذرا لم تقم بإعطاء التطبيق صلاحية للدخول</string>
+
+  <string name="gallerylabel">الصور</string>
+  <string name="hello_user">مرحبا, %s</string>
+  <string name="item_web">الموقع الإلكتروني</string>
+  <string name="of_label">من</string>
+
+  <string name="req_fields">الحقول المشار إليها ب* مطلوبة.</string>
+  <string name="req_location">برجاء تحديد موقعك.</string>
+  <string name="req_photos">برجاء تحديد الصور المطلوبة.</string>
+  <string name="req_files">برجاء تحديد الملفات المطلوبة.</string>
+
+  <string name="action_settings">الاعدادت</string>
+  <string name="action_share">مشاركة</string>
+
+  <string name="error_failed">خطأ</string>
+  <string name="error_failed_try_again">حدث خطأ ما ، من فضلك حاول من جديد</string>
+  <string name="error_failed_later">حدث خطأ ما ، من فضلك حاول لاحقًا</string>
+  <string name="error_msg_notsent">لم يتم إرسال الرسالة</string>
+  <string name="error_msg_not_sent">لم يتم الإرسال</string>
+  <string name="error_msg_empty">أدخل نص الرسالة</string>
+  <string name="error_login_failed">لم يتم تسجيل الدخول</string>
+  <string name="error_not_logged_in">من فضلك قم بتسجيل الدخول.</string>
+  <string name="error_register_failed">لم يتم التسجيل</string>
+  <string name="error_reset_pass_failed">لم يتم استعادة كلمة المرور</string>
+  <string name="error_form_not_submited">حدث خطأ ما</string>
+
+  <string name="downloading">جاري تحميل الملف</string>
+
+  <string name="enable_locatin_head">تفعيل خدمات الموقع</string>
+  <string name="enable_locatin_msg">اعدادات موقعك غير مفعلة.
+        من فضلك قم بتفعيل خدمات الموقع.</string>
+
+  <string name="title_activity_notifications">الاشعارات</string>
+  <string name="sort_by">ترتيب حسب</string>
+  <string name="open_link">فتح الرابط</string>
+  <string name="phone_label">هاتف :</string>
+  <string name="sms_label">ارسال رسالة نصية :</string>
+  <string name="auto_refresh">تحديث تلقائي</string>
+  <string name="auto_zoom">تكبير تلقائي</string>
+  <string name="user_fullname">الأسم بالكامل</string>
+  <string name="user_email">البريد الالكتروني</string>
+  <string name="sendmsg_hint">نص الرسالة</string>
+  <string name="my_location">موقعي</string>
+  <string name="embbed_my_location">إرسال موقعي</string>
+
+  <string name="chngfiles">تغيير الملفات</string>
+  <string name="chngimg">تغيير الصور</string>
+  <string name="clearsel">إلغاء التحديد</string>
+  <string name="videos_title">الفيديو</string>
+  <string name="download_files">تحميل الملفات</string>
+  <string name="msg_input_phone">أدخل رقم هاتفك المحمول</string>
+  <string name="msg_input_valid_phone">تحقق من رقم هاتفك المحمول</string>
+  <string name="msg_input_username">أدخل أسم المستخدم</string>
+  <string name="msg_input_password">أدخل كلمة المرور</string>
+  <string name="msg_input_name">أدخل أسمك</string>
+  <string name="msg_input_email">أدخل بريدك الالكتروني</string>
+  <string name="msg_input_valid_email">تحقق من بريدك الالكتروني</string>
+  <string name="input_email">البريد الالكتروني</string>
+  <string name="input_msg">أدخل رسالتك</string>
+  <string name="message">رسالتك</string>
+  <string name="forget_password">نسيت كلمة المرور ؟</string>
+  <string name="forget_password_head">إستعادة كلمة المرور</string>
+  <string name="input_phone">رقم الهاتف</string>
+
+  <string name="sendmsg_head">إرسال رسالة إلي</string>
+  <string name="success_done">تمت العملية بنجاح</string>
+  <string name="success_login">تم تسجيل الدخول بنجاح</string>
+  <string name="success_logout">تم تسجيل الخروج بنجاح</string>
+  <string name="success_message_sent">تم إرسال الرسالة</string>
+  <string name="success_added_cart">أضيفت للسلة</string>
+  <string name="success_notify">سوف نقوم بتنبيهك عند توفر المخزون</string>
+  <string name="success_edit_cart">تم تعديل السلة</string>
+  <string name="new_notification_alert">لديك اشعار جديد.</string>
+  <string name="new_message_alert">لديك رسالة جديدة.</string>
+  <string name="new_conversation_alert">لديك محادثة جديدة.</string>
+  <string name="title_activity_messages">الرسائل</string>
+  <string name="addfiles">أضف ملفات</string>
+  <string name="selfiles">تحديد الملفات</string>
+  <string name="selimg">تحديد الصور</string>
+
+
+  <string name="cancelbtn">إلغاء</string>
+  <string name="reloadbtn">محاولة جديدة</string>
+  <string name="okbtn">موافق</string>
+  <string name="viewbtn">عرض</string>
+  <string name="location_settings_btn">اعدادات الموقع</string>
+  <string name="btn_resv">أحجز الأن</string>
+  <string name="btn_download">تحميل</string>
+  <string name="btn_change">تغيير</string>
+  <string name="registerbtn">تسجيل</string>
+  <string name="forget_password_btn">استعادة</string>
+  <string name="msgbtn">إرسال الرسالة</string>
+  <string name="sendmsg_btn">إرسال رسالة</string>
+  <string name="credit_charge_btn">شحن رصيدي</string>
+
+  <string name="from_label">من</string>
+  <string name="to_label">إلي</string>
+
+  <string name="backend_title">تحكم المستخدمين</string>
+  <string name="sms_action">ارسال رسالة</string>
+
+  <string name="app_tag_line">اسلوب حياة</string>
+
+  <string name="title_about">من نحن</string>
+  <string name="content_about">موارد وخير بلدنا كتيرة وبايدينا نقدر نوصلها لبعض بسهولة ونستغلها أحسن..
+    <br/><br/>
+    عالفرازة قررت تقوم بالدور ده وتستغل الطاقات اللي مش دايما متوفرلها سكك سهلة تقدر تشتغل بيها وتوفرلهم شغل بفكر جديد ومختلف.</string>
+
+  <string name="title_activity_news_info">الأخبار</string>
+  <string name="title_activity_wishlist">المفضلة</string>
+  <string name="title_activity_cart">سلة التسوق</string>
+  <string name="title_activity_checkout">إتمام الطلب</string>
+  <string name="title_activity_history">طلباتي</string>
+
+  <!--All data for ActivityLocation.java -->
+  <string name="sorry_no_cover">عذرًا موقعك الحالي خارج نطاق تغطية عالفرازة.</string>
+  <string name="notify_when_available">نبهني عند وجود تغطية.</string>
+  <string name="your_area">المنطقة : %s</string>
+
+  <!--All data for ActivityStore.java -->
+  <string name="str_nav_shopping_cart">سلة التسوق</string>
+  <string name="press_again_exit_app">أضغط مرة أخري، للخروج من التطبيق</string>
+
+  <!--All data for ActivityCategoryDetails.java -->
+  <string name="title_menu_search">بحث</string>
+  <string name="title_menu_delete">حذف</string>
+
+  <!--All data for ActivityProductDetails.java -->
+  <string name="please_wait_text">يرجى الانتظار حتى يتم تحميل البيانات</string>
+  <string name="cannot_add_wishlist">لا يمكن الإضافة للمفضلة</string>
+  <string name="add_wishlist">أضيفت للمفضلة</string>
+  <string name="remove_wishlist">حذفت من المفضلة</string>
+  <string name="out_of_stock">مش وقته</string>
+  <string name="suspend">جاي في السكة</string>
+  <string name="ready_stock">متاح الطلب</string>
+  <string name="bt_add_cart">أضف إلي السلة</string>
+  <string name="bt_notify_me">سجل تنبيه</string>
+
+  <!--All data for ActivitySplash.java -->
+  <string name="msg_no_internet">يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى</string>
+  <string name="title_no_internet">لا يوجد اتصال بالإنترنت</string>
+
+  <string name="i_will">عيشها عالفرازة</string>
+  <string name="order_it_fresh">هطلبها فريش</string>
+  <string name="make_it_fresh">هعملها فريش</string>
+  <string name="deliver_it_fresh">هوصلها فريش</string>
+
+  <!--All data for ActivityWishlist.java -->
+  <string name="msg_wishlist_empty">قائمة المفضلة فارغة</string>
+  <string name="title_menu_wishlist">المفضلة</string>
+
+  <!--All data for ActivityShoppingCart.java -->
+  <string name="msg_cart_empty">سلة التسوق فارغة</string>
+  <string name="discount">الخصم&#160;</string>
+  <string name="enter_promo_code">أدخل كود الخصم</string>
+  <string name="apply_btn">تفعيل</string>
+  <string name="total">الإجمالي&#160;</string>
+  <string name="sub_total">الإجمالي الفرعي&#160;</string>
+  <string name="delivery">مصاريف الشحن&#160;</string>
+  <string name="stock">المخزون : &#160;</string>
+  <string name="QUANTITY">الكمية</string>
+  <string name="items">صنف(أصناف)</string>
+  <string name="title_menu_checkout">إتمام الطلب</string>
+
+  <!--All data for ActivitySearch.java -->
+  <string name="ALL">الجميع</string>
+  <string name="Category">القسم :&#160;</string>
+  <string name="hint_input_search">أبحث عن …</string>
+  <string name="please_fill">برجي إدخال كلمة البحث</string>
+
+  <!--All data for ActivityOrderHistory.java -->
+  <string name="title_history_details">تفاصيل الطلب</string>
+
+  <string name="rate_btn">تقييم</string>
+  <string name="success_rate">تم التقييم بنجاح</string>
+  <string name="rating">نسبة التقيم</string>
+  <string name="set_rate">حدد نسبة التقيم</string>
+  <string name="no_rate">لم يتم تحديد نسبة التقييم</string>
+
+  <!--All data for ActivityCheckout.java -->
+  <string name="notes_label">ملاحظات</string>
+  <string name="cost_details">التكلفة</string>
+  <string name="total_fess">الإجمالي :&#160;</string>
+  <string name="buyer_profile">تفاصيل المستخدم</string>
+  <string name="hint_name">الأسم</string>
+  <string name="hint_email">البريد الإلكتروني</string>
+  <string name="hint_phone">الهاتف</string>
+  <string name="hint_street">شارع</string>
+  <string name="hint_building">البناية</string>
+  <string name="hint_floor">الطابق</string>
+  <string name="hint_apartment">رقم الشقة</string>
+  <string name="hint_additional">إرشادات إضافية (إختياري)</string>
+  <string name="hint_comment">ملاحظات (إختياري)</string>
+  <string name="product_order_list">الأصناف</string>
+
+  <string name="invalid_name">تحقق من الأسم</string>
+  <string name="invalid_email">نحقق من البريد الإلكتروني</string>
+  <string name="invalid_phone">تحقق من رقم الهاتف</string>
+  <string name="invalid_street">تحقق من الشارع</string>
+  <string name="invalid_building">تحقق من البناية</string>
+  <string name="invalid_floor">تحقق من الطابق</string>
+  <string name="invalid_apartment">تحقق من رقم الشقة</string>
+
+  <string name="title_please_wait">من فضلك أنتظر</string>
+  <string name="content_submit_checkout">إتمام الطلب&#8230;</string>
+  <string name="confirmation">تأكيد</string>
+  <string name="confirm_checkout">هل أنت متأكد من رغبتك في إتمام هذا الطلب؟</string>
+  <string name="failed_checkout">عفوًا حدث خطأ عند اتمام الطلب\n\nتحقق من اتصالك بالإنترنت.</string>
+  <string name="success_checkout">تهانينا</string>
+  <string name="msg_success_checkout">تم اتمام طلبك بنجاح.\nرقم الطلب: %1$s\n\nسوف نقوم بمراجعة طلبك في أسرع وقت.</string>
+  <string name="process_checkout">تأكيد الطلب</string>
+
+  <!--All data ActivityNewsInfoDetails.java -->
+  <string name="featured">مميز</string>
+
+  <!--All data ActivityFullScreenImage.java -->
+  <string name="image_of">%1$d من %2$d</string>
+
+  <!--All data related about page-->
+  <!--Size three array below must be same -->
+  <string-array name="about_title_array">
+    <item>يا مراحب</item>
+    <item>في عالفرازة</item>
+    <item>مفيش أسهل من كده</item>
+    <item>خليك جاهز</item>
+  </string-array>
+
+  <string-array name="about_description_array">
+    <item>عالفرازة هتسهلها عليكو وتقربلكو البعيد 😀</item>
+    <item>تقدر تدور وتلاقي منتجات بأحسن الأسعار 😀</item>
+    <item>الموضوع سهل.. دوس عاللي انت عايزه\nوكمل اوردرك بضغطة 😀</item>
+    <item>ثواني هنراجع اوردرك وخليك جاهز بقا لاستلامه 😀</item>
+  </string-array>
+
+  <integer-array name="about_images_array">
+    <item>@drawable/intro_img_1</item>
+    <item>@drawable/intro_img_2</item>
+    <item>@drawable/intro_img_3</item>
+    <item>@drawable/intro_img_4</item>
+  </integer-array>
+
+  <!-- Other String -->
+  <string name="failed_text">خطأ في تحميل البيانات</string>
+  <string name="no_internet_text">لا يوجد اتصال بالإنترنت</string>
+  <string name="no_item">لا يوجد بيانات لعرضها</string>
+  <string name="msg_failed_load_data">خطأ في تحميل البيانات</string>
+  <string name="title_delete_confirm">تأكيد الحذف</string>
+  <string name="content_delete_confirm">هل أنت متأكد من رغبتك في حذف الجميع&#160;</string>
+  <string name="delete_success">تم الحذف بنجاح</string>
+  <string name="msg_copied_clipboard">تم نسخ النص إلى الحافظة</string>
+  <string name="failed">فشل</string>
+
+  <string name="OK">أوك</string>
+  <string name="GOT_IT">فهمت</string>
+  <string name="YES">نعم</string>
+  <string name="NO">لا</string>
+  <string name="CANCEL">إلغاء</string>
+  <string name="CLOSE">إغلاق</string>
+  <string name="RETRY">محاولة جديدة</string>
+  <string name="TRY_AGAIN">حاول مجددًا</string>
+  <string name="DELETE">حذف</string>
+  <string name="SAVE">حفظ</string>
+  <string name="NEXT">التالي</string>
+  <string name="SKIP">تخطي</string>
+  <string name="enjoy_3alfraza">عيشها عالفرازة</string>
+</resources>

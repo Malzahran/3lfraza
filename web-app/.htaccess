@@ -1,0 +1,56 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ajax/([^/.]+)/([^/.]+)/?$ request.php?t=$1&a=$2 [L,QSA]
+RewriteRule ^ajax/([^/.]+)/?$ request.php?t=$1 [L,QSA]
+RewriteRule ^ajax request.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-z]{2}|[a-z]{2}-[A-Z]{2})/([^/]+)/([^/]+)/([^/]+)(/|)$  index.php?lang=$1&tab1=$2&tab2=$3&tab3=$4 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^/]{3,})/([^/]+)/([^/]+)(/|)$  index.php?tab1=$1&tab2=$2&tab3=$3 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-z]{2}|[a-z]{2}-[A-Z]{2})/([^/]+)/([^/]+)(/|)$  index.php?lang=$1&tab1=$2&tab2=$3 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^/]{3,})/([^/]+)(/|)$  index.php?tab1=$1&tab2=$2 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-z]{2}|[a-z]{2}-[A-Z]{2})/([^/]+)(/|)$  index.php?lang=$1&tab1=$2 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]{3,})(/|)$  index.php?tab1=$1 [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z]{2}|[a-z]{2}-[A-Z]{2})(/|)$  index.php?lang=$1 [QSA]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://app.3lfraza.com/$1 [R,L]
+
+<IfModule mod_headers.c>
+# Set XSS Protection header
+Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php70” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php70 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,77 @@
+<!-- start: DYNAMIC TABLE -->
+<div class="container-fluid container-fullw bg-white">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="over-title margin-bottom-15"><span class="text-bold">@orders_label@</span>
+                <div id="ordersCat">
+                    <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox" name="cats[]"
+                                                                                          id="connectchk" value="1"
+                                                                                          checked=""><label
+                                for="connectchk">@connect_delv_order@</label></div>
+                    <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox" name="cats[]"
+                                                                                          id="storechk" value="1"><label
+                                for="storechk">@self_delv_order@</label></div>
+                </div>
+            </h5>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input
+                                type="text" placeholder="@search_input_ph@" id="search-table" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="storetype" name="type[]" value="1" checked="checked">
+                        <label for="storetype">
+                            @store_label@
+                        </label>
+                    </div>
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="delvtype" name="type[]" value="1">
+                        <label for="delvtype">
+                            @delivery_agent_label@
+                        </label>
+                    </div>
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="userstype" name="type[]" value="1">
+                        <label for="userstype">
+                            @clients_label@
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4 pull-left">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" name="from_date" class="form-control date" value="iC{{FROM_DATE}}">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" name="to_date" class="form-control date" value="iC{{TO_DATE}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="orders_total" value="0">
+            <input type="hidden" id="first_get" value="0">
+            <div class="table-responsive">
+                <table class="table-striped" id="ordtbl">
+                    <thead>
+                    <tr>
+                        <th>@count_label@</th>
+                        <th>@name_label@</th>
+                        <th>@total_orders_label@</th>
+                        <th>@total_label@</th>
+                        <th>@req_order_delv_cost_label@</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

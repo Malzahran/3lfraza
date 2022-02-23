@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Widget.ActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/notf_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_bell"
+            android:contentDescription="@string/title_activity_notifications"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/notf_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/notf_icon"
+            android:layout_alignEnd="@id/notf_icon"
+            android:background="@drawable/rounded_square"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:text="@null"
+            android:textColor="@color/White"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</FrameLayout>

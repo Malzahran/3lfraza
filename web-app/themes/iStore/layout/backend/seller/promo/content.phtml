@@ -1,0 +1,48 @@
+<!-- start: DYNAMIC TABLE -->
+<div class="container-fluid container-fullw bg-white">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="over-title margin-bottom-15"><span class="text-bold">@manage_label@@promo_codes_label@</span>
+            </h5>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input
+                                type="text" placeholder="@search_input_ph@" id="search-table" value="iC{{SEARCH_Q}}"
+                                class="form-control"></div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox" id="active"
+                                                                                          name="active[]" value="1"
+                                                                                          checked=""><label
+                                for="active">@active_label@</label></div>
+                    <div class="checkbox clip-check check-warning checkbox-inline"><input type="checkbox" id="unactive"
+                                                                                          name="active[]" value="1"
+                                                                                          checked=""><label
+                                for="unactive">@unactive_label@</label></div>
+                </div>
+                <div class="col-sm-3  pull-left">
+                    <button id="add-new" class="btn btn-green add-row">
+                        @add_new_btn@ <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table-striped" id="dtTbl">
+                    <thead>
+                    <tr>
+                        <th>@count_label@</th>
+                        <th>@promo_code_label@</th>
+                        <th>@type_label@</th>
+                        <th>@value_label@</th>
+                        <th>@added_time_label@</th>
+                        <th>@state_label@</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+<!-- Modal -->
+<div class="modal fade slide-up" id="addnew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-md">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@add_new_btn@</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5 class="over-title margin-bottom-15"><span class="text-bold">@users_label@</span></h5>
+
+                        <div class="tabbable">
+                            <ul id="myTab2" class="nav nav-tabs nav-justified">
+                                <li class="active">
+                                    <a href="#addusr_tab_genral" data-toggle="tab" aria-expanded="false">
+                                        <i class="fa fa-navicon"></i> @main_info_add@ <span
+                                                class="symbol required"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#addusr_tab_pers" data-toggle="tab" aria-expanded="true">
+                                        <i class="fa fa-user"></i> @personal_info_label@ <span
+                                                class="symbol required"></span>
+                                    </a>
+                                </li>
+                                <li id="perm" class="hidden">
+                                    <a href="#addusr_tab_perm" data-toggle="tab" aria-expanded="true">
+                                        <i class="fa fa-key"></i> @permissions_label@ <span
+                                                class="symbol required"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#addusr_tab_media" data-toggle="tab" aria-expanded="true">
+                                        <i class="fa fa-photo"></i> @personal_image_label@
+                                    </a>
+                                </li>
+                            </ul>
+                            <form enctype="multipart/form-data" method="post" action="javascript:void(0)"
+                                  class="add-form" id="adduser">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="addusr_tab_genral">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        @account_type_label@
+                                                    </label> <span class="symbol required"></span>
+                                                    <select id="typesel" name="accounttype" class="form-control"
+                                                            required>
+                                                        <option value="">@account_type_label@</option>
+                                                        <option value="2">@user_type_label@</option>
+                                                        <option value="1">@admin_type_label@</option>
+                                                        iC{{SUPER_ADMIN_SEL}}
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>@username_label@</label> <span class="symbol required"></span>
+                                                <br>
+                                                <button type="button" onclick="generateUsername('f',4);" title=""
+                                                        data-toggle="tooltip" class="btn btn-primary btn-block m-t-5"
+                                                        data-original-title="@new_uname_tip@"><i
+                                                            class="fa fa-dot-circle-o"></i> @genrate_uname_btn@
+                                                </button>
+                                                <div class="form-group form-group-default input-group col-sm-12 required">
+                                                    <input type="text" name="username" id="username"
+                                                           placeholder="@username_label@"
+                                                           onkeyup="checkUsername(this.value,0,'.check-username-result',false);"
+                                                           class="form-control input-sm username" autocomplete="off"
+                                                           required>
+                                                    <span class="input-group-addon primary">
+                                                        <i class="fa fa-dot-circle-o"></i>
+                                                        <div class="check-username-result"></div>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>@password_label@</label> <span class="symbol required"></span>
+                                                <br>
+                                                <button type="button" id="copypass" data-placement="bottom" title=""
+                                                        data-toggle="tooltip" class="btn btn-primary btn-block m-t-5"
+                                                        onclick="copyPassword();"
+                                                        data-original-title="@copy_uname_pass_tip@" disabled>
+                                                    <i class="fa fa-copy"></i> @copy_uname_btn@
+                                                </button>
+                                                <div class="form-group form-group-default input-group col-sm-12 required">
+                                                    <input type="password" name="password" id="password"
+                                                           placeholder="@password_label@" class="form-control input-sm"
+                                                           autocomplete="off" onkeyup="passeye();" required>
+                                                    <span class="input-group-addon">
+                                                        <span id="passsymb">
+                                                            <i class="fa fa-keyboard-o"></i> </span>
+                                                        <div id="showpass" class="hidden">
+														<button data-placement="left" title="" data-toggle="tooltip"
+                                                                class="btn btn-primary tip btn-xs m-t-10 passeye"
+                                                                type="button" data-original-title="@show_pass_tip@">
+                                                            <i class="fa fa-eye"></i>
+                                                            </button>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="addusr_tab_pers">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @name_label@ <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="text" placeholder="@input_ph@@name_label@"
+                                                           class="form-control" name="name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @email_label@ <span class="symbol required"></span>
+                                                    </label>
+                                                    <input id="emailinput" type="email"
+                                                           placeholder="@input_ph@@email_label@" class="form-control"
+                                                           onkeyup="checkEmail(this.value,0,'.check-email-result',false);"
+                                                           name="email" required>
+                                                    <span class="input-group-addon primary">
+                                                        <i class="fa fa-envelope"><div class="check-email-result"></div></i>
+                                                        
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @phone_label@
+                                                    </label>
+                                                    <input type="number" placeholder="@input_ph@@phone_label@"
+                                                           class="form-control" name="phone">
+                                                    <span class="input-group-addon primary">
+                                                        <i class="fa fa-phone"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="addusr_tab_perm"></div>
+                                    <div class="tab-pane fade" id="addusr_tab_media">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @personal_image_label@
+                                                    </label>
+                                                    <input name="avatar" type="file" class="form-control">
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+                    @cancel_btn@
+                </button>
+                <button id="addnewbtn" type="button" class="btn btn-success">
+                    @add_new_btn@
+                </button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

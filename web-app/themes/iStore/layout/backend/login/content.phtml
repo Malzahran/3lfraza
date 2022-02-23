@@ -1,0 +1,55 @@
+<!-- start: LOGIN -->
+<div class="row">
+    <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <div class="logo margin-top-30">
+            <img src="iC{{CONFIG_THEME_URL}}/backend/assets/images/logo.png" alt="@system_name@"/>
+        </div>
+        <!-- start: LOGIN BOX -->
+        <div class="box-login">
+            <form id="form-login" class="form-login" action="javascript:void(0)">
+                <fieldset>
+                    <legend>
+                        @signin_head@
+                    </legend>
+                    <p>
+                        @signin_desc@
+                    </p>
+                    <div class="form-group">
+								<span class="input-icon">
+									<input type="text" class="form-control" name="login_id"
+                                           placeholder="@username_label@" required>
+									<i class="fa fa-user"></i> </span>
+                    </div>
+                    <div class="form-group form-actions">
+								<span class="input-icon">
+									<input type="password" class="form-control" name="login_password"
+                                           placeholder="@password_label@" required>
+									<i class="fa fa-lock"></i> </span>
+                    </div>
+                    <div class="form-actions">
+                        <div class="checkbox clip-check check-primary">
+                            <input type="checkbox" id="keep_logged_in" value="1">
+                            <label for="remember">
+                                @remember_label@
+                            </label>
+                        </div>
+                        <div id="error"></div>
+                        <button type="submit" id="submit-btn" class="btn btn-primary pull-right">
+                            @login_label@ <i class="fa fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- start: COPYRIGHT -->
+            <div class="copyright">
+                @lang_label@ : iC{{LANGUAGES}}<br>
+                @copyright_1@ &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> @system_name@</span>.
+                <span>@copyright_2@</span>
+
+            </div>
+            <!-- end: COPYRIGHT -->
+        </div>
+        <!-- end: LOGIN BOX -->
+    </div>
+</div>
+<!-- end: LOGIN -->

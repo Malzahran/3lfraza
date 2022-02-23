@@ -1,0 +1,110 @@
+<!-- Modal -->
+<div class="modal fade slide-up" id="addnew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-sm">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@add_new_btn@</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h5 class="over-title margin-bottom-15"><span class="text-bold">@news_label@</span></h5>
+
+                        <div class="tabbable">
+                            <ul id="myTab2" class="nav nav-tabs nav-justified">
+                                <li class="active">
+                                    <a href="#addItem_tab_genral" data-toggle="tab" aria-expanded="false">
+                                        <i class="fa fa-navicon"></i> @main_info_add@
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#addItem_tab_ar" data-toggle="tab" aria-expanded="false">
+                                        <i class="fa fa-globe"></i> @data_in_lang@@ar_lang@
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#addItem_tab_en" data-toggle="tab" aria-expanded="true">
+                                        <i class="fa fa-globe"></i> @data_in_lang@@en_lang@
+                                    </a>
+                                </li>
+                            </ul>
+                            <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="add-form" id="addItem">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="addItem_tab_genral">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @main_photo_label@ <span class="symbol required"></span>
+                                                    </label>
+                                                    <input name="fimage" type="file" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="addItem_tab_ar">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @title_in_lang@@ar_lang@ <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="text" placeholder="@input_ph@@title_in_lang@@ar_lang@"
+                                                           class="form-control" name="title[ar]" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @des_in_lang@@ar_lang@ <span class="symbol required"></span>
+                                                    </label>
+                                                    <textarea class="ckeditor form-control" name="desc[ar]" cols="5"
+                                                              rows="5" required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="addItem_tab_en">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @title_in_lang@@en_lang@
+                                                    </label>
+                                                    <input type="text" placeholder="@input_ph@@title_in_lang@@en_lang@"
+                                                           class="form-control" name="title[en]">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        @des_in_lang@@en_lang@
+                                                    </label>
+                                                    <textarea class="form-control" name="desc[en]" cols="5"
+                                                              rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+                    @cancel_btn@
+                </button>
+                <button id="addnewbtn" type="button" class="btn btn-success">
+                    @add_new_btn@
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

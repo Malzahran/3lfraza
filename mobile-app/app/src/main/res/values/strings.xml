@@ -1,0 +1,330 @@
+<resources>
+    <string name="app_name">3lFraza</string>
+    <string name="app_still_running">Application is still running</string>
+    <string name="app_still_running_desc">Click To Open Again</string>
+    <string name="facebook_app_id" translatable="false">2359706980917052</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2359706980917052</string>
+    <string name="google_app_id" translatable="false"></string>
+    <string name="google_maps_id" translatable="false"></string>
+
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="hello_user">Hello, %s</string>
+
+    <string name="about_app">About App.</string>
+    <string name="about_html">
+        <![CDATA[
+        <h5>© <b>%1$s</b></h5>
+        App Version : <b>%2$s</b>.
+        ]]>
+    </string>
+
+    <string name="lang_change_long">عربي</string>
+    <string name="lang_change">ع</string>
+    <string name="menu_news">News</string>
+    <string name="menu_orders">My Orders</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_users_head">Users Area</string>
+    <string name="menu_profile">My Account</string>
+    <string name="menu_share">Share App.</string>
+
+    <string name="credit_label">Credit : </string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="login_facebook">Login With FACEBOOK</string>
+    <string name="login_google">Login With GOOGLE</string>
+    <string name="register">Register Account</string>
+    <string name="register_sh">Register</string>
+    <string name="loginhead">User Login</string>
+    <string name="registerhead">User Registration</string>
+    <string name="change_pass">Change Password</string>
+    <string name="oldpass">Old Password</string>
+    <string name="newpass">New Password</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">Loading</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+
+    <string name="gallerylabel">Gallery</string>
+
+    <string name="email">Email</string>
+    <string name="item_web">Website</string>
+
+    <string name="fieldsempty">Fields are empty !</string>
+    <string name="internetcheck">Check your connection to the internet.</string>
+    <string name="copyrights">© 3lFraza</string>
+    <string name="of_label">of</string>
+    <string name="req_fields">Fields with * are required.</string>
+    <string name="req_location">Please send your location.</string>
+    <string name="req_photos">Please Select Photos.</string>
+    <string name="req_files">Please Select Files.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <string name="error_failed">Error</string>
+    <string name="error_failed_try_again">Something Went Wrong, Please Try Again</string>
+    <string name="error_failed_later">Something Went Wrong, Please Try Later</string>
+    <string name="error_msg_notsent">Message Not Sent</string>
+    <string name="error_msg_not_sent">Not Sent</string>
+    <string name="error_msg_empty">Input Message Text</string>
+    <string name="error_login_failed">Login Failed</string>
+    <string name="error_not_logged_in">Please Login To Continue.</string>
+    <string name="error_register_failed">Register Failed</string>
+    <string name="error_reset_pass_failed">Reset Password Failed</string>
+    <string name="error_form_not_submited">Something Went Wrong.</string>
+
+
+    <string name="downloading">Downloading File</string>
+
+    <string name="enable_locatin_head">Enable Location</string>
+    <string name="enable_locatin_msg">Your Locations Settings is set to Off
+        Please Enable Location.</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="sort_by">Sort By</string>
+    <string name="open_link">Open Link</string>
+    <string name="phone_label">Phone :</string>
+    <string name="sms_label">Send SMS :</string>
+    <string name="auto_refresh">Auto Update</string>
+    <string name="auto_zoom">Auto Zoom</string>
+    <string name="user_fullname">Full Name</string>
+    <string name="user_email">Email Address</string>
+    <string name="sendmsg_hint">Message Text</string>
+    <string name="my_location">My Location</string>
+    <string name="embbed_my_location">Send My Location</string>
+    <string name="chngfiles">Change Files</string>
+    <string name="chngimg">Change Photos</string>
+    <string name="clearsel">Clear Selection</string>
+    <string name="videos_title">Video</string>
+    <string name="download_files">Download Files</string>
+    <string name="msg_input_phone">Input Your Phone Number</string>
+    <string name="msg_input_valid_phone">Verify Your Phone Number</string>
+    <string name="msg_input_username">Input UserName</string>
+    <string name="msg_input_password">Input Password</string>
+    <string name="msg_input_name">Input Your Name</string>
+    <string name="msg_input_email">Input Your Email</string>
+    <string name="msg_input_valid_email">Verify Your Email Address</string>
+    <string name="input_email">Email Address</string>
+    <string name="input_msg">Input Your Message</string>
+    <string name="message">Your Message</string>
+
+    <string name="forget_password">Forget Password</string>
+    <string name="forget_password_head">Password Reset</string>
+    <string name="input_phone">Phone Number</string>
+    <string name="sendmsg_head">Send Message To </string>
+    <string name="success_done">Success</string>
+    <string name="success_login">Successful Login</string>
+    <string name="success_logout">Logout Successfully</string>
+    <string name="success_message_sent">Message Sent</string>
+    <string name="success_added_cart">Added To Cart</string>
+    <string name="success_notify">We Will Notify You As Soon As It Is Available</string>
+    <string name="success_edit_cart">Cart Updated</string>
+    <string name="new_notification_alert">You Have A New Notification.</string>
+    <string name="new_message_alert">You Have A New Message</string>
+    <string name="new_conversation_alert">You Have A New Conversation.</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="addfiles">Add Files</string>
+    <string name="selfiles">Select Files</string>
+    <string name="selimg">Select Photos</string>
+
+    <string name="okbtn">OK</string>
+    <string name="cancelbtn">Cancel</string>
+    <string name="viewbtn">Info</string>
+    <string name="reloadbtn">Try Again</string>
+    <string name="location_settings_btn">Location Settings</string>
+    <string name="sendmsg_btn">Send Message</string>
+    <string name="btn_resv">Order Now</string>
+    <string name="btn_download">Download</string>
+    <string name="btn_change">Change</string>
+    <string name="registerbtn">Register</string>
+    <string name="forget_password_btn">Reset</string>
+    <string name="msgbtn">Send Message</string>
+    <string name="credit_charge_btn">Credit Charge</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+
+    <string name="sms_action">Send SMS</string>
+    <string name="backend_title">Users Control</string>
+    <string name="contact_face" translatable="false">facebook.com/3lfraza</string>
+
+    <string name="app_tag_line">It\'s all about lifestyle</string>
+
+    <string name="title_about">About</string>
+
+    <string name="content_about">Egypt full of natural and human resources, which we can use and deliver it to each other.
+     <br /><br />
+     3lfraza decided to have the roll to connect people by easing and letting capable hands to find new chances in the market.
+    </string>
+    <string name="title_activity_news_info">News Info</string>
+    <string name="title_activity_wishlist">Wishlist</string>
+    <string name="title_activity_cart">Shopping Cart</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_activity_history">Order History</string>
+
+    <!--All data for ActivityLocation.java -->
+    <string name="sorry_no_cover">Sorry 3lFraza Currently Dosn\'t Cover Your Current Location.</string>
+    <string name="notify_when_available">Notify Me When Coverage Extends.</string>
+    <string name="your_area">Area : %s</string>
+
+    <!--All data for ActivityStore.java -->
+    <string name="str_nav_shopping_cart">Shopping Cart</string>
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <!--All data for ActivityCategoryDetails.java -->
+    <string name="title_menu_search">Search</string>
+    <string name="title_menu_delete">Delete</string>
+
+    <!--All data for ActivityProductDetails.java -->
+    <string name="please_wait_text">Please wait until data loaded</string>
+    <string name="cannot_add_wishlist">cannot add to wishlist</string>
+    <string name="add_wishlist">Added to wishlist</string>
+    <string name="remove_wishlist">Removed from wishlist</string>
+    <string name="out_of_stock">OUT OF SEASON</string>
+    <string name="suspend">COMING SOON</string>
+    <string name="ready_stock">READY STOCK</string>
+    <string name="bt_add_cart">ADD TO CART</string>
+    <string name="bt_notify_me">Notify Me</string>
+
+    <!--All data for ActivitySplash.java -->
+    <string name="msg_no_internet">Please check your Internet connection and try again</string>
+    <string name="title_no_internet">No Internet Connection</string>
+
+    <string name="i_will">I Will</string>
+    <string name="order_it_fresh">Get It Fresh</string>
+    <string name="make_it_fresh">Make It Fresh</string>
+    <string name="deliver_it_fresh">Deliver It Fresh</string>
+
+    <!--All data for ActivityWishlist.java -->
+    <string name="msg_wishlist_empty">Wishlist is empty</string>
+    <string name="title_menu_wishlist">Wishlist</string>
+
+    <!--All data for ActivityShoppingCart.java -->
+    <string name="msg_cart_empty">Shopping Cart is empty</string>
+    <string name="discount">Discount&#160;</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="apply_btn">Apply</string>
+    <string name="total">Total&#160;</string>
+    <string name="sub_total">Sub-Total&#160;</string>
+    <string name="delivery">Delivery Fee&#160;</string>
+    <string name="stock">Stock : &#160;</string>
+    <string name="QUANTITY">QUANTITY</string>
+    <string name="items">Item(s)</string>
+    <string name="title_menu_checkout">Checkout</string>
+
+    <!--All data for ActivitySearch.java -->
+    <string name="ALL">ALL</string>
+    <string name="Category">Category :&#160;</string>
+    <string name="hint_input_search">Search input</string>
+    <string name="please_fill">Please Fill Search Input</string>
+
+    <!--All data for ActivityOrderHistory.java -->
+    <string name="title_history_details">Order History Details</string>
+
+    <string name="rate_btn">Rate</string>
+    <string name="success_rate">Successfully Rated</string>
+    <string name="rating">Rating</string>
+    <string name="set_rate">Set Rate</string>
+    <string name="no_rate">Please Set Rating Value</string>
+
+    <!--All data for ActivityCheckout.java -->
+    <string name="notes_label">Notes</string>
+    <string name="cost_details">Cost Details</string>
+    <string name="total_fess">Total Fees :&#160;</string>
+    <string name="buyer_profile">Buyer Profile</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_street">Street</string>
+    <string name="hint_building">Building</string>
+    <string name="hint_floor">Floor</string>
+    <string name="hint_apartment">Apartment No.</string>
+    <string name="hint_additional">Additional Directions (Optional)</string>
+    <string name="hint_comment">Comment (Optional)</string>
+    <string name="product_order_list">Product Order List</string>
+
+    <string name="invalid_name">invalid name</string>
+    <string name="invalid_email">invalid email</string>
+    <string name="invalid_phone">invalid phone</string>
+    <string name="invalid_street">invalid street</string>
+    <string name="invalid_building">invalid building</string>
+    <string name="invalid_floor">invalid floor</string>
+    <string name="invalid_apartment">invalid apartment no.</string>
+
+    <string name="title_please_wait">Please Wait</string>
+    <string name="content_submit_checkout">Submit Checkout&#8230;</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_checkout">Are you sure want to checkout this order?</string>
+    <string name="failed_checkout">
+        Oops, Failed when checkout order
+        \n\nMake sure you have internet connection, or if you need help please Contact Us from menu Settings
+    </string>
+    <string name="success_checkout">Congratulation</string>
+    <string name="msg_success_checkout">
+        Successfully checkout order.\nYour order code : %1$s\n\nYour order will be reviewed soon.
+    </string>
+    <string name="process_checkout">PROCESS CHECKOUT</string>
+
+    <!--All data ActivityNewsInfoDetails.java -->
+    <string name="featured">featured</string>
+
+    <!--All data ActivityFullScreenImage.java -->
+    <string name="image_of">%1$d of %2$d</string>
+
+    <!--All data related about page-->
+    <!--Size three array below must be same -->
+    <string-array name="about_title_array">
+        <item>WELCOME</item>
+        <item>DISCOVER PRODUCT</item>
+        <item>ADD TO CART</item>
+        <item>VERIFY AND RECEIVE</item>
+    </string-array>
+
+    <string-array name="about_description_array">
+        <item>3lFraza is a Fresh Online Store for Everyone</item>
+        <item>Search Latest and Featured Product\nWith Best Price</item>
+        <item>Add to Cart All Product You need\nAnd Checkout the Order</item>
+        <item>We Will Verify Your Order\nGet Ready and Receive your order</item>
+    </string-array>
+
+    <integer-array name="about_images_array">
+        <item>@drawable/intro_img_1</item>
+        <item>@drawable/intro_img_2</item>
+        <item>@drawable/intro_img_3</item>
+        <item>@drawable/intro_img_4</item>
+    </integer-array>
+
+    <!-- Activity Setting : xml/setting_preference.xml -->
+
+
+    <!-- Other String -->
+    <string name="failed_text">Failed When Load Data</string>
+    <string name="no_internet_text">No Internet Connection</string>
+    <string name="no_item">No Item</string>
+    <string name="msg_failed_load_data">Failed when load data</string>
+    <string name="title_delete_confirm">Delete Confirmation</string>
+    <string name="content_delete_confirm">Are you sure want to delete all&#160;</string>
+    <string name="delete_success">Delete successfully</string>
+    <string name="msg_copied_clipboard">Text copied to clipboard</string>
+    <string name="failed">Failed</string>
+
+    <string name="OK">OK</string>
+    <string name="GOT_IT">GOT IT</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="CLOSE">CLOSE</string>
+    <string name="RETRY">RETRY</string>
+    <string name="TRY_AGAIN">TRY AGAIN</string>
+    <string name="DELETE">DELETE</string>
+    <string name="SAVE">SAVE</string>
+    <string name="NEXT">NEXT</string>
+    <string name="SKIP">SKIP</string>
+    <string name="enjoy_3alfraza">Enjoy It 3lFraza</string>
+
+</resources>

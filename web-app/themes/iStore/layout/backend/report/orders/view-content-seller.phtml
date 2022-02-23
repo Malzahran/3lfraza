@@ -1,0 +1,58 @@
+<div class="modal-body">
+    <div class="row">
+        <div class="col-xs-4">
+            <img width="100%" src="iC{{CONFIG_SITE_URL}}/media/logo.png" class="img-rounded">
+        </div>
+        <div class="col-xs-8 vertical-align-middle">
+            <div class="row-fluid">
+                <div class="row">
+                    <div class="col-xs-6"><h3><b>@orders_report_label@</b></h3></div>
+                    <div class="col-xs-6"><h4 class="pull-left"><i class="fa fa-calendar"></i> @issued_date_label@ : <b>iC{{TODAY_DATE}}</b>
+                        </h4></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-7"><h4><i class="fa fa-user"></i> iC{{CLIENT_LABEL}} : <b>iC{{ORDER_CLIENT}}</b>
+                        </h4></div>
+                    <div class="col-xs-5"><h4>@total_orders_label@ : <b>iC{{ORDERS_COUNT}}</b></h4></div>
+                </div>
+                <div class="row" id="total_data">
+                    <div class="col-xs-3"><h4>@req_order_cost_label@ : <br><b>iC{{ORDERS_COST}}</b></h4></div>
+                    <div class="col-xs-3"><h4>@pos_dsc_label@ : <br><b>iC{{ORDERS_DISCOUNT}}</b></h4></div>
+                    <div class="col-xs-3"><h4>@req_order_delv_cost_label@ : <br><b>iC{{ORDERS_DELIVERY}}</b></h4></div>
+                    <div class="col-xs-3"><h4>@total_label@ : <br><b>iC{{ORDERS_TOTAL}}</b></h4></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-6"><h4><i class="fa fa-calendar"></i> @period_from_label@ : <br><b>iC{{FROM_DATE}}</b>
+                        </h4></div>
+                    <div class="col-xs-6"><h4><i class="fa fa-calendar"></i> @to_label@ : <br><b>iC{{TO_DATE}}</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="orders_data">
+        <div class="col-xs-12">
+            <hr>
+            <span class="label label-primary"><i class="fa fa-info"></i> @orders_details_label@</span>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" id="sample_2">
+                    <thead>
+                    <tr>
+                        <th>@count_label@</th>
+                        <th>@req_order_number_label@</th>
+                        <th>@req_order_cost_label@</th>
+                        <th>@pos_dsc_label@</th>
+                        <th>@req_order_delv_cost_label@</th>
+                        <th>@pos_trans_date@</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    iC{{ORDERS_DATA}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

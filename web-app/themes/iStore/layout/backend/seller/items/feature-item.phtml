@@ -1,0 +1,37 @@
+<div class="col-sm-12" id="feature_iC{{FT_ID}}">
+    <form role="form" class="form-inline" action="javascript:void(0)" id="featureForm_iC{{FT_ID}}">
+        <input type="hidden" value="iC{{FT_ID}}" name="ft_id">
+        <div class="form-group">
+            <label for="featcat_iC{{FT_ID}}">
+            </label>
+            <select id="featcat_iC{{FT_ID}}" name="category" class="form-control" required>
+                iC{{FT_SELECT}}
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" value="iC{{FT_TITLE_AR}}" placeholder="@input_ph@@title_in_lang@@ar_lang@"
+                   name="title[ar]"
+                   class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="text" value="iC{{FT_TITLE_EN}}"
+                   placeholder="@input_ph@@title_in_lang@@en_lang@" name="title[en]"
+                   class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="@input_ph@@price_label@" name="price"
+                   value="iC{{FT_PRICE}}" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="@input_ph@@price_dsc_label@" name="dscprice"
+                   value="iC{{FT_DSC_PRICE}}" class="form-control">
+        </div>
+        <button class="btn btn-warning" type="button" onclick="eFt(iC{{FT_ID}});">
+            @edit_btn@
+        </button>
+        <button class="btn btn-danger" type="button" onclick="dFt(iC{{FT_ID}});">
+            @delete_btn@
+        </button>
+    </form>
+    <br>
+</div>

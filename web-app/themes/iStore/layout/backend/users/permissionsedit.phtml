@@ -1,0 +1,87 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label class="control-label">
+                <i class="fa fa-user"></i> @users_label@
+            </label>
+            <div class="checkbox clip-check check-inverse checkbox-inline"><input type="checkbox" id="eusersview"
+                                                                                  name="perm[users][view]" value="1"
+                                                                                  iC{{PERM_USERS_VIEW}}><label
+                        for="eusersview">@view_label@</label></div>
+            <div class="checkbox clip-check check-info checkbox-inline"><input type="checkbox" id="eusersadd"
+                                                                               name="perm[users][add]" value="1"
+                                                                               iC{{PERM_USERS_ADD}}><label
+                        for="eusersadd">@add_label@</label></div>
+            <div class="checkbox clip-check check-danger checkbox-inline"><input type="checkbox" id="eusersdel"
+                                                                                 name="perm[users][del]" value="1"
+                                                                                 iC{{PERM_USERS_DEL}}><label
+                        for="eusersdel">@delete_btn@</label></div>
+            <div class="checkbox clip-check check-warning checkbox-inline"><input type="checkbox" id="eusersedit"
+                                                                                  name="perm[users][edit]" value="1"
+                                                                                  iC{{PERM_USERS_EDIT}}><label
+                        for="eusersedit">@edit_btn@</label></div>
+            <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox" id="eusersactv"
+                                                                                  name="perm[users][actv]" value="1"
+                                                                                  iC{{PERM_USERS_ACTV}}><label
+                        for="eusersactv">@activiate_btn@</label></div>
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label class="control-label">
+                <i class="fa fa-lock"></i> @privacy_label@
+            </label>
+            <div class="checkbox clip-check check-inverse checkbox-inline"><input type="checkbox" id="eprvview"
+                                                                                  name="perm[prv][view]" value="1"
+                                                                                  iC{{PERM_PRV_VIEW}}><label
+                        for="eprvview">@view_label@</label></div>
+            <div class="checkbox clip-check check-warning checkbox-inline"><input type="checkbox" id="eprvedit"
+                                                                                  name="perm[prv][edit]" value="1"
+                                                                                  iC{{PERM_PRV_EDIT}}><label
+                        for="eprvedit">@edit_btn@</label></div>
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label class="control-label">
+                <i class="fa fa-list"></i> @terms_label@
+            </label>
+            <div class="checkbox clip-check check-inverse checkbox-inline"><input type="checkbox" id="etermsview"
+                                                                                  name="perm[terms][view]" value="1"
+                                                                                  iC{{PERM_TERMS_VIEW}}><label
+                        for="etermsview">@view_label@</label></div>
+            <div class="checkbox clip-check check-warning checkbox-inline"><input type="checkbox" id="etermsedit"
+                                                                                  name="perm[terms][edit]" value="1"
+                                                                                  iC{{PERM_TERMS_EDIT}}><label
+                        for="etermsedit">@edit_btn@</label></div>
+            <hr>
+        </div>
+    </div>
+</div>
+<legend class="control-label">
+    <i class="fa fa-mobile"></i> @mob_app_nav_label@
+</legend>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <label class="control-label">
+                <i class="fa fa-mobile"></i> @fcm_notifications_label@
+            </label>
+            <div class="checkbox clip-check check-inverse checkbox-inline"><input type="checkbox" id="enotfview"
+                                                                                  name="perm[notf][view]" value="1"
+                                                                                  iC{{PERM_NOTF_VIEW}}><label
+                        for="enotfview">@view_label@</label></div>
+            <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox" id="enotfsend"
+                                                                                  name="perm[notf][add]" value="1"
+                                                                                  iC{{PERM_NOTF_ADD}}><label
+                        for="enotfsend">@send_msgs_label@</label></div>
+            <hr>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<header class="navbar navbar-default navbar-static-top">
+    <!-- start: NAVBAR HEADER -->
+    <div class="navbar-header">
+        <a href="#" class="sidebar-mobile-toggler pull-right hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle"
+           data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+            <i class="ti-align-justify"></i>
+        </a>
+        <a class="navbar-brand" href="iC{{HOME_URL}}">
+            <img src="iC{{CONFIG_THEME_URL}}/backend/assets/images/logo.png" alt="@system_name"/>
+        </a>
+        <a href="#" class="sidebar-toggler pull-left visible-md visible-lg" data-toggle-class="app-sidebar-closed"
+           data-toggle-target="#app">
+            <i class="ti-align-justify"></i>
+        </a>
+        <a class="pull-left menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse"
+           href=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="ti-view-grid"></i>
+        </a>
+    </div>
+    <!-- end: NAVBAR HEADER -->
+    <!-- start: NAVBAR COLLAPSE -->
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-right">
+            <!-- start: ACTIVITIES DROPDOWN -->
+            <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="ti-check-box"></i> <span>@notification_label@</span>
+                    <span class="dot-badge partition-red iC{{BADGE_HIDDEN}}"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
+                    <li>
+                        <span class="dropdown-header"> iC{{NTF_HEAF}}</span>
+                    </li>
+                    <li>
+                        <div class="drop-down-wrapper ps-container">
+                            <div class="list-group no-margin">
+                                iC{{NOTIFICATIONS}}
+                            </div>
+                        </div>
+                    </li>
+                    <li class="view-all">
+                        <a href="iC{{NOTIFICATION_URL}}">
+                            @view_all_label@
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- end: ACTIVITIES DROPDOWN -->
+            <!-- start: LANGUAGE SWITCHER -->
+            <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="ti-world"></i> iC{{CURRENT_LANG}}
+                </a>
+                <ul role="menu" class="dropdown-menu dropdown-light fadeInUpShort">
+                    iC{{LANG_SELECT}}
+                </ul>
+            </li>
+            <!-- end: LANGUAGE SWITCHER -->
+            <!-- start: USER OPTIONS DROPDOWN -->
+            <li class="dropdown current-user">
+                <a href class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="useravatar"><img src="iC{{USER_THUMBNAIL_URL}}" alt="iC{{USER_NAME}}"></span> <span
+                            class="username">iC{{USER_FIRST_NAME}} <i class="ti-angle-down"></i></i></span>
+                </a>
+                <ul class="dropdown-menu dropdown-dark">
+                    <li>
+                        <a href="iC{{PROFILE_URL}}">
+                            @my_profile_label@
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iC{{LOGOUT_URL}}">
+                            @logout_label@
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- end: USER OPTIONS DROPDOWN -->
+        </ul>
+        <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+        <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+            <div class="arrow-left"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+    </div>
+    <!-- end: NAVBAR COLLAPSE -->
+</header>

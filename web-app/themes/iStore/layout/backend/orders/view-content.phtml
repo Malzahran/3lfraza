@@ -1,0 +1,48 @@
+<div class="modal-body">
+    <div class="row center">
+        <div class="col-xs-12">
+            iC{{ORD_IMG}}
+            <h5>@order_number_label@ : iC{{ORDER_NUMBER}}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <small>@assigned_delv_label@ : iC{{ORDER_DELIVERY_NAME}}</small>
+            <br>
+            <small>@assigned_wrk_label@ : iC{{ORDER_WORKER_NAME}}</small>
+            <br>
+            iC{{ORDER_ARRIVAL_TIME}}
+            iC{{ORDER_PROMO_CODE}}
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+        <div class="col-xs-4">
+            @req_order_cost_label@:<br><b>iC{{ORDER_COST}}</b>
+        </div>
+        <div class="col-xs-4">
+            @pos_dsc_label@:<br><b>iC{{ORDER_DISCOUNT}}</b>
+        </div>
+        <div class="col-xs-4">
+            @req_order_delv_cost_label@:<br><b>iC{{ORDER_DELIVERY}}</b>
+        </div>
+        <div class="col-xs-12">
+            <br>
+            <span class="pull-left"><b>@total_label@: iC{{ORDERS_TOTAL}}</b></span>
+        </div>
+    </div>
+    <hr>
+    iC{{CLIENT_INFO}}
+    <div class="row">
+        <div class="col-xs-12"><br>
+            <legend><b>@req_order_detailes_label@</b></legend>
+            iC{{ORDER_CONTENT}}
+            <div class="row iC{{ORDER_NOTES_HIDDEN}}">
+                <hr>
+                <div class="col-xs-12">
+                    @req_order_notes_label@ : iC{{ORDER_NOTES}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

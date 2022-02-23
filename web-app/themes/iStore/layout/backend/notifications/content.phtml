@@ -1,0 +1,40 @@
+<!-- start: DYNAMIC TABLE -->
+<div class="container-fluid container-fullw bg-white">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="over-title margin-bottom-15"><span
+                        class="text-bold">@manage_label@@fcm_notifications_label@</span></h5>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input
+                                type="text" placeholder="@search_input_ph@" id="search-table" value="iC{{SEARCH_Q}}"
+                                class="form-control"></div>
+                </div>
+                <div class="col-sm-5">
+                </div>
+                <div class="col-sm-3  pull-left">
+                    <button id="send-g-notf" class="btn btn-warning add-row">
+                        @send_notf_btn@ <i class="fa fa-bell"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table-striped" id="notftbl">
+                    <thead>
+                    <tr>
+                        <th>@count_label@</th>
+                        <th>@notf_rep_desc@</th>
+                        <th>@notf_title@</th>
+                        <th>@notf_message@</th>
+                        <th>@notf_pros@</th>
+                        <th>@notf_rep_delv@</th>
+                        <th>@notf_rep_time@</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

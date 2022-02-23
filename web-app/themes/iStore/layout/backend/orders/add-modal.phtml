@@ -1,0 +1,144 @@
+<!-- Modal -->
+<div class="modal fade slide-up" id="addnew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-sm">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@register_order_btn@</h4>
+            </div>
+            <div class="modal-body">
+                <form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="add-form"
+                      id="addorder">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="dlvgroup">
+                                    @req_order_sell_delv_label@
+                                </label>
+                                <select id="dlvgroup" name="order_delivery_id" class="form-control" required>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @req_order_cost_label@ <span class="symbol required"></span>
+                                </label>
+                                <input type="number" placeholder="@input_ph@@req_order_cost_label@" class="form-control"
+                                       name="order_price" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @req_order_delv_cost_label@ <span class="symbol required"></span>
+                                </label>
+                                <input type="number" placeholder="@input_ph@@req_order_delv_cost_label@"
+                                       class="form-control"
+                                       name="order_delivery" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" id="select">
+                            <div class="form-group">
+                                <label for="usersel">
+                                    @search_client_label@
+                                </label> <span class="symbol required"></span>
+                                <select name="user_id" onchange="checkUser()" id="usersel"
+                                        class="form-control" required>
+                                    <option value="">@search_client_label@</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row hidden" id="inputuser">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">@req_client_name_label@ <span
+                                            class="symbol required"></span>
+                                </label>
+                                <input id="uname" type="text" placeholder="@input_ph@@req_client_name_label@"
+                                       class="form-control"
+                                       name="name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">@req_client_phone_label@ <span
+                                            class="symbol required"></span>
+                                </label>
+                                <input id="uphone" type="text" placeholder="@input_ph@@req_client_phone_label@"
+                                       class="form-control"
+                                       name="phone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @req_client_address_label@ <span class="symbol required"></span>
+                                </label>
+                                <input id="uaddress" type="text" placeholder="@input_ph@@req_client_address_label@"
+                                       class="form-control"
+                                       name="address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @req_delv_arrival_date@
+                                </label>
+                                <input type="text" placeholder="@input_ph@@req_delv_arrival_date@" class="form-control"
+                                       name="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    @req_delv_arrival_time@
+                                </label>
+                                <input type="text" placeholder="@input_ph@@req_delv_arrival_time@" class="form-control"
+                                       name="time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="order_desc" class="control-label">
+                                    @req_order_detailes_label@ <span class="symbol required"></span>
+                                </label>
+                                <textarea id="order_desc" class="form-control" name="desc" cols="3" rows="3"
+                                          required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">
+                    @cancel_btn@
+                </button>
+                <button id="addnewbtn" type="button" class="btn btn-success">
+                    @add_new_btn@
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

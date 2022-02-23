@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/first_start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash_bg" />
+
+        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+            android:id="@+id/loader"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:padding="10dp"
+            android:src="@drawable/ic_logo"
+            app:cfl_border="true"
+            app:cfl_border_width="6dp"
+            app:cfl_progress="80"
+            app:cfl_wave_amplitude="0.06"
+            app:cfl_wave_color="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/i_will"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loader"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/layout_border_oval"
+            android:gravity="center"
+            android:paddingStart="@dimen/dimen_20"
+            android:paddingTop="10dp"
+            android:paddingEnd="@dimen/dimen_20"
+            android:paddingBottom="10dp"
+            android:text="@string/i_will"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_get_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/i_will"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/ripple_effect_dark"
+            android:drawableStart="@drawable/ic_client"
+            android:padding="@dimen/dimen_20"
+            android:text="@string/order_it_fresh"
+            android:textColor="@drawable/text_white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_make_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_get_it"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_effect_dark"
+            android:drawableStart="@drawable/ic_worker"
+            android:padding="@dimen/dimen_20"
+            android:text="@string/make_it_fresh"
+            android:textColor="@drawable/text_white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_deliver_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_make_it"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_effect_dark"
+            android:drawableStart="@drawable/ic_delivery"
+            android:padding="@dimen/dimen_20"
+            android:text="@string/deliver_it_fresh"
+            android:textColor="@drawable/text_white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_deliver_it"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_effect_dark"
+            android:drawableStart="@drawable/ic_lang"
+            android:padding="@dimen/dimen_20"
+            android:text="@string/lang_change_long"
+            android:textColor="@drawable/text_white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/splash_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash_bg" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/main_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_large" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_xxlarge"
+                android:gravity="center"
+                android:text="@string/app_tag_line"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

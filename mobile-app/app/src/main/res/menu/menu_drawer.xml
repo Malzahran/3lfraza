@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_area"
+            android:checkable="false"
+            android:title="@null"
+            app:actionLayout="@layout/view_city" />
+        <item
+            android:id="@+id/btn_lang"
+            android:icon="@drawable/ic_lang"
+            android:title="@string/lang_change_long" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_notf_icon"
+            android:title="@string/title_about" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_wish"
+            android:title="@string/menu_news" />
+        <item
+            android:id="@+id/nav_wish"
+            android:icon="@drawable/ic_fav"
+            android:title="@string/title_menu_wishlist" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="@string/str_nav_shopping_cart"
+            app:actionLayout="@layout/menu_counter_plain_" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_items"
+            android:title="@string/menu_orders" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_call_phone"
+            android:title="@string/menu_contact" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/menu_share" />
+    </group>
+
+    <item android:title="@string/menu_users_head">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_login"
+                android:title="@string/login" />
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@drawable/ic_bell"
+                android:title="@string/title_activity_notifications" />
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_person"
+                android:title="@string/menu_profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout_dark"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

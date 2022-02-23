@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/ic_bell"
+        android:title="@string/title_activity_notifications"
+        app:actionLayout="@layout/action_bar_notification_icon"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_messages"
+        android:icon="@drawable/ic_messages"
+        android:title="@string/title_activity_messages"
+        app:actionLayout="@layout/action_bar_messages_icon"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

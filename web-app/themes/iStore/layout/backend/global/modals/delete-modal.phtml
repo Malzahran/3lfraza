@@ -1,0 +1,29 @@
+<!-- Delete Modal -->
+<div class="modal fade modal-aside horizontal left" tabindex="-1" id="deleteitem" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-sm">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@delete_confirm_head@</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="javascript:void(0)" id="delete-form">
+                    <input type="hidden" name="itemid" id="delid">
+                    @are_you_sure_del@ <span class="text-danger text-bold" id="delname"></span> @question_mark@
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-o" data-dismiss="modal">
+                    @cancel_btn@
+                </button>
+                <button type="button" id="del-btn" class="btn btn-danger">
+                    @delete_btn@
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Delete Modal -->

@@ -1,0 +1,163 @@
+<form enctype="multipart/form-data" method="post" action="javascript:void(0)" class="edit-form" id="edituser">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5 class="over-title margin-bottom-15"><span class="text-bold">@delivery_agent_label@</span>
+                    <div class="checkbox clip-check check-success checkbox-inline"><input type="checkbox"
+                                                                                          id="activestate"
+                                                                                          name="activestate" value="1"
+                                                                                          iC{{USER_ACTIVE}}><label
+                            for="activestate">@active_label@</label></div>
+                </h5>
+
+                <div class="tabbable">
+                    <ul id="myTab2" class="nav nav-tabs nav-justified">
+                        <li class="iC{{USER_EDIT_PASSWORD}}">
+                            <a href="#editusr_tab_genral" data-toggle="tab" aria-expanded="false">
+                                <i class="fa fa-navicon"></i> @user_info@ <span class="symbol required"></span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#editusr_tab_pers" data-toggle="tab" aria-expanded="true">
+                                <i class="fa fa-user"></i> @personal_info_label@ <span class="symbol required"></span>
+                            </a>
+                        </li>
+                        <li id="perm" class="iC{{USER_EDIT_PERM_HEAD}}">
+                            <a href="#editusr_tab_perm" data-toggle="tab" aria-expanded="true">
+                                <i class="fa fa-key"></i> @permissions_label@ <span class="symbol required"></span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#editusr_tab_media" data-toggle="tab" aria-expanded="true">
+                                <i class="fa fa-photo"></i> @personal_image_label@
+                            </a>
+                        </li>
+                    </ul>
+                    <input type="hidden" name="userid" value="iC{{USER_EDIT_ID}}">
+                    <div class="tab-content">
+                        <div class="tab-pane fade iC{{USER_EDIT_PASSWORD}}" id="editusr_tab_genral">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>@username_label@</label> <span class="symbol required"></span>
+                                    <div class="form-group form-group-default input-group col-sm-12 required">
+                                        <input type="text" id="username" value="iC{{USER_EDIT_USERNAME}}"
+                                               class="form-control input-sm username" autocomplete="off" disabled>
+                                        <input type="hidden" name="username" value="iC{{USER_EDIT_USERNAME}}"
+                                               class="form-control input-sm username" autocomplete="off">
+                                        <span class="input-group-addon primary">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 iC{{USER_EDIT_PASSWORD}}">
+                                    <label>@password_label@</label>
+                                    <div class="form-group form-group-default input-group col-sm-12">
+                                        <input type="password" name="password" id="epassword"
+                                               placeholder="@password_label@" class="form-control input-sm"
+                                               autocomplete="off" onkeyup="epasseye();" required>
+                                        <span class="input-group-addon">
+                                                        <span id="passseymb">
+                                                            <i class="fa fa-keyboard-o"></i> </span>
+                                                        <div id="showpasse" class="hidden">
+														<button data-placement="left" title="" data-toggle="tooltip"
+                                                                onclick="Viewepass();"
+                                                                class="btn btn-primary tip btn-xs m-t-10 passeyee"
+                                                                type="button" data-original-title="@show_pass_tip@">
+                                                            <i class="fa fa-eye"></i>
+                                                            </button>
+                                                        </div>
+                                                    </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active in" id="editusr_tab_pers">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @name_label@ <span class="symbol required"></span>
+                                        </label>
+                                        <input type="text" placeholder="@input_ph@@name_label@" class="form-control"
+                                               name="name" value="iC{{USER_EDIT_NAME}}" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @national_id_label@
+                                        </label>
+                                        <input type="text" placeholder="@input_ph@@national_id_label@"
+                                               value="iC{{USER_EDIT_NID}}" class="form-control" name="nid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @email_label@ <span class="symbol required"></span>
+                                        </label>
+                                        <input id="emaileinp" type="email" placeholder="@input_ph@@email_label@"
+                                               class="form-control"
+                                               onchange="checkeEmail(this.value,0,'.check-email-result',false);"
+                                               name="email" value="iC{{USER_EDIT_EMAIL}}" required>
+                                        <span class="input-group-addon primary">
+                                                        <i class="fa fa-envelope"><div class="check-email-result"></div></i>
+                                                        
+                                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @phone_label@
+                                        </label>
+                                        <input type="number" placeholder="@input_ph@@phone_label@" class="form-control"
+                                               name="phone" value="iC{{USER_EDIT_PHONE}}">
+                                        <span class="input-group-addon primary">
+                                                        <i class="fa fa-phone"></i>
+                                                    </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="editusr_tab_perm">
+                            iC{{EDIT_USER_PERM_TAB}}
+                        </div>
+                        <div class="tab-pane fade" id="editusr_tab_media">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img width="100%" src="iC{{USER_EDIT_IMG}}" class="img-rounded">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            @personal_image_label@
+                                        </label>
+                                        <input name="avatar" type="file" class="form-control">
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-warning btn-o" data-dismiss="modal">@cancel_btn@</button>
+        <button id="edit-btn" type="button" onclick="updateitem();" class="btn btn-success">
+            @edit_btn@
+        </button>
+    </div>
+</form>

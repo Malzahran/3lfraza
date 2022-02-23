@@ -1,0 +1,58 @@
+<!-- start: DYNAMIC TABLE -->
+<div class="container-fluid container-fullw bg-white">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="over-title margin-bottom-15"><span class="text-bold">@manage_label@@seller_cats_label@</span>
+            </h5>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input
+                            type="text" placeholder="@search_input_ph@" id="search-table" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="allcats" name="type[]" value="1" checked="checked">
+                        <label for="allcats">
+                            @all_cats_label@
+                        </label>
+                    </div>
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="parentcat" name="type[]" value="1">
+                        <label for="parentcat">
+                            @main_cats@
+                        </label>
+                    </div>
+                    <div class="radio clip-radio radio-primary radio-inline">
+                        <input type="radio" id="maincat" name="type[]" value="1">
+                        <label for="maincat">
+                            @sub_cats@
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-2  pull-left">
+                    iC{{ADD_NEW_BTN}}
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table-striped" id="catstbl">
+                    <thead>
+                    <tr>
+                        <th>@count_label@</th>
+                        <th>@category_name@</th>
+                        <th>@main_category@</th>
+                        <th>@sub_category@</th>
+                        <th>@cat_order_label@</th>
+                        <th>@type_label@</th>
+                        <th>@photo_label@</th>
+                        <th>@added_time_label@</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

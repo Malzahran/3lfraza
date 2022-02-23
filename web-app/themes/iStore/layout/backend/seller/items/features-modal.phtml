@@ -1,0 +1,62 @@
+<!-- Modal -->
+<div class="modal fade slide-up" id="itemFeatures" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog modal-lg">
+        <div class="modal-content bg-white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">@add_features_btn@</h4>
+            </div>
+            <div class="modal-body">
+                <h5 class="over-title margin-bottom-15"><span id="itemName" class="text-bold"> </span></h5>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form role="form" class="form-inline" action="javascript:void(0)" id="addfeature">
+                            <input type="hidden" name="item_id" id="itemID">
+                            <div class="form-group">
+                                <label for="featcat">
+                                </label>
+                                <select id="featcat" name="category" class="form-control" required>
+                                    iC{{FEAT_SELECT}}
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="@input_ph@@title_in_lang@@ar_lang@" name="title[ar]"
+                                       class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="@input_ph@@title_in_lang@@en_lang@" name="title[en]"
+                                       class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="@input_ph@@price_label@" name="price"
+                                       class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="@input_ph@@price_dsc_label@" name="dscprice"
+                                       class="form-control">
+                            </div>
+                            <button class="btn btn-primary" id="addFtBtn" type="button">
+                                @add_label@
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4>@features_label@</h4>
+                        <div id="Features" class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

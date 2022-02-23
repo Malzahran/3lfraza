@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/actv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:text="@null"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_msg"
+        android:layout_below="@+id/actv_title"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/message"
+            android:src="@drawable/ic_messages"
+            android:tint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/et_msgtext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/sendmsg_hint"
+            android:inputType="textLongMessage"
+            android:textColorHint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/btn_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="2dp"
+            android:contentDescription="@string/sendmsg_btn"
+            android:rotation="180"
+            android:src="@drawable/ic_send_btn"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+
+</RelativeLayout>
